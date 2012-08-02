@@ -11,3 +11,30 @@ body{
 	/* Background */
 	background: url(../img/bkgrd/txture.png) repeat;
 }
+
+#main-wrapper{
+	width: 960px;
+	
+	position: relative;
+	top: 100px;
+	left: 50%;
+
+	margin-left: -480px;
+	
+	color: #DDDDDD;
+}
+
+footer{
+	height: 50px;
+	width: 400px;
+
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+
+	margin-left: -200px;
+
+	text-align: center;
+	color: #DDDDDD;
+	font-size: 1em;
+}

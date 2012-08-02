@@ -19,8 +19,7 @@
           <a class="brand" href="#">ShareMyFolder</a>
           <ul class="nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
+            <li><a href="#">SSH</a></li>
           </ul>
           <form class="navbar-search pull-right">
             <input type="text" class="search-query" placeholder="Search">
@@ -29,9 +28,12 @@
       </div>
   </header>
 
+  <section id="main-wrapper" class="row">
+     
+  </section>
 
   <footer>
-    
+    <p>Edit by GuillaumB | All Right Reserved &copy;</p>
   </footer>
 
   <!-- Script/JS -->
