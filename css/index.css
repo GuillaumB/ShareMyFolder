@@ -1,0 +1,13 @@
+/**** Index Page CSS ****/
+body{
+	height: 100%;
+	width: 100%;
+
+	margin: 0px;
+	padding: 0px;
+
+	overflow-x: hidden;
+
+	/* Background */
+	background: url(../img/bkgrd/txture.png) repeat;
+}
