@@ -1,0 +1,14 @@
+[
+  {
+    "name": "dev", 
+    "type": "folder"
+  },
+  {
+    "name": "toto", 
+    "type": "folder"
+  },
+  {
+    "name": "GitHub", 
+    "type": "folder"
+  }
+]

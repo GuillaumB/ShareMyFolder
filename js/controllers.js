@@ -2,13 +2,22 @@
 
 function ListGlobal($scope, $http){
   $scope.folder = "Global"
+  $scope.close = "img/icons/ko-grey.png"
+  $scope.isDisabled = true
 
-  $http.get('data/file.json').success(function(data){
+  //Get files & folders
+  $http.get('data/file.php').success(function(data){
     $scope.files = data
   })
 }
 
-function ListFolder($scope, $routeParams){
+function ListFolder($scope, $routeParams, $http){
   $scope.folder = $routeParams.FolderName
+  $scope.close = "img/icons/ko-red.png"
+  $scope.isDisabled = false
 
+  //Get files & folders
+  $http.get('data/file.php?folder='+$routeParams.FolderName).success(function(data){
+    $scope.files = data
+  })
 }

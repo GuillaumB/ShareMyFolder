@@ -37,6 +37,11 @@ body{
   padding: 10px 0px 10px 5px;
 }
 
+#main-wrapper .folder{
+  position: relative;
+  top: -5px;
+}
+
 footer{
   height: 50px;
   width: 400px;

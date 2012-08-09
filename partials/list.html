@@ -14,10 +14,15 @@
   </header>
 
   <section id="main-wrapper" class="row">
-    <p>Vous êtes dans le Dossier <span class="label label-info">{{folder}}</span></p>
-    <ul>
-      <li ng-repeat="file in files | filter:query"><i class="icon-{{file.type}}-open icon-white"></i> <a href="#/{{file.name}}">{{file.name}}</a></i></li>
-    </ul>
+    <div class="span6">
+      <h4>Vous êtes dans le Dossier <span class="label label-info">{{folder}}</span></h4>
+    </div>   
+    <div class="span1 offset5"><a href="#/list"><img ng-src="{{close}}" alt="Close"></a></div>
+    <div class="span12">
+      <ul>
+        <li ng-repeat="file in files | filter:query"><img src="img/icons/folder-opened-grey.png" alt="Folder" class="folder"> <a href="#/{{file.name}}">{{file.name}}</a></i></li>
+      </ul>
+    </div>    
   </section>
 
   <footer>

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "fichier1", 
+    "type": "folder"
+  },
+  {
+    "name": "folder", 
+    "type": "folder"
+  },
+  {
+    "name": "fichier2", 
+    "type": "folder"
+  }
+]

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>ShareMyFolder</title>
-  <link rel="icon" type="image/png" href="img/icon/folder_cloud.png">
+  <link rel="icon" type="image/png" href="img/icons/box-opened-blue.png">
 
   <!-- Style/CSS -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all">
