@@ -20,7 +20,7 @@
     <div class="span1 offset5"><a href="#/list"><img ng-src="{{close}}" alt="Close"></a></div>
     <div class="span12">
       <ul>
-        <li ng-repeat="file in files | filter:query"><img src="img/icons/folder-opened-grey.png" alt="Folder" class="folder"> <a href="#/{{file.name}}">{{file.name}}</a></i></li>
+        <li ng-repeat="file in files | filter:query"><img src="img/icons/{{file.type}}.png" alt="Folder" class="folder"> <a href="#/{{file.name}}">{{file.name}}</a></li>
       </ul>
     </div>    
   </section>
