@@ -19,5 +19,24 @@
   <div ng-view></div>
   <!-- Script/JS -->
   <script type="text/javascript" src="js/lib/jquery.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+
+    $('.folder').live({
+      click: function(){
+        console.log('click on folder link')
+      },
+      mouseover: function(){
+        $(this).find('img').attr('src', 'img/icons/folder-opened-blue.png')
+      },
+      mouseout: function(){
+        $(this).find('img').attr('src', 'img/icons/folder.png')
+      }
+    })    
+  })
+
+   
+
+  </script>
 </body>
 </html>

@@ -37,7 +37,7 @@ body{
   padding: 10px 0px 10px 5px;
 }
 
-#main-wrapper .folder{
+#main-wrapper .icon{
   position: relative;
   top: -5px;
 }
@@ -55,4 +55,18 @@ footer{
   text-align: center;
   color: #DDDDDD;
   font-size: 1em;
+}
+
+/** General Class **/
+.cyan{
+  color: #0088cc;
+  cursor: default;
+}
+
+.folder{
+  cursor: pointer;
+}
+
+.folder:hover{
+  color: #005580;
 }
