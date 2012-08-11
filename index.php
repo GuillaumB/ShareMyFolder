@@ -24,7 +24,23 @@
 
     $('.folder').live({
       click: function(){
-        console.log('click on folder link')
+        //nom du dossier à explorer
+        var folder = $(this).text()
+
+        //nom du dossier courant
+        var current = document.location.hash.split('/')
+        current = current.slice(1,current.length)
+        current= current.join('/')
+
+        if(current != "list"){
+          var url = '#/'+current+'/'+folder
+        }
+        else{
+          var url = '#/'+folder
+        }
+
+        url = url.replace(' ','')
+        document.location.hash = url
       },
       mouseover: function(){
         $(this).find('img').attr('src', 'img/icons/folder-opened-blue.png')
