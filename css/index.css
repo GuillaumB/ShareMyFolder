@@ -20,6 +20,8 @@ body{
   left: 50%;
 
   margin-left: -480px;
+
+  padding-bottom: 50px;
   
   color: #DDDDDD;
 }
@@ -43,18 +45,17 @@ body{
 }
 
 footer{
-  height: 50px;
-  width: 400px;
-
+  width: 100%;
   position: fixed;
   bottom: -20px;
-  left: 50%;
-
-  margin-left: -200px;
+  left: 0px;
 
   text-align: center;
-  color: #DDDDDD;
-  font-size: 1em;
+}
+
+footer p{
+  position: relative;
+  top: 10px;
 }
 
 /** General Class **/
@@ -69,4 +70,8 @@ footer{
 
 .folder:hover{
   color: #005580;
+}
+
+.label{
+  font-size: 1em;
 }
