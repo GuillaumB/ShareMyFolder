@@ -12,15 +12,33 @@
   <!-- Script/JS -->
   <script type="text/javascript" src="js/lib/angular.js"></script>
   <script type="text/javascript" src="js/routers.js"></script>
-  <script type="text/javascript" src="js/controllers.js"></script>  
+  <script type="text/javascript" src="js/controllers.js"></script>
+
+  <script type="text/javascript" src="js/lib/jquery.js"></script>
 </head>
 <body>
+<a href=""><img src="" alt=""></a>
+  <div class="view" ng-view></div>
 
-  <div ng-view></div>
-  <!-- Script/JS -->
-  <script type="text/javascript" src="js/lib/jquery.js"></script>
   <script type="text/javascript">
-  $(document).ready(function(){
+  jQuery(document).ready(function(){
+
+    $('.file').live({
+      mouseenter: function(){
+        $('.dl').detach()
+
+        var fileName = $(this).find('a:first').text()
+        var filePath = $(this).find('a:first').attr('class')
+        $(this).append('<a class="dl pull-right" href="http://localhost/'+filePath+'/'+fileName+'"><img src="img/icons/ok-green.png" alt="Download" title="Download"></a>')
+      },
+      mouseover: function(){
+        $(this).find('img:first').attr('src', 'img/icons/file-text.png')
+      },
+      mouseout: function(){
+        $(this).find('img:first').attr('src', 'img/icons/file.png')
+      }
+    })
+
 
     $('.folder').live({
       click: function(){
@@ -43,16 +61,14 @@
         document.location.hash = url
       },
       mouseover: function(){
-        $(this).find('img').attr('src', 'img/icons/folder-opened-blue.png')
+        $(this).find('img:first').attr('src', 'img/icons/folder-opened-blue.png')
       },
       mouseout: function(){
-        $(this).find('img').attr('src', 'img/icons/folder.png')
+        $(this).find('img:first').attr('src', 'img/icons/folder.png')
       }
     })    
-  })
+  })   
 
-   
-
-  </script>
+  </script> 
 </body>
 </html>

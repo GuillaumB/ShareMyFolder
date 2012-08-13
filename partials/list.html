@@ -20,7 +20,7 @@
     <div class="span1 offset5"><a href="{{closePath}}"><img ng-src="{{close}}" alt="Close" title="Close Folder"></a> <a href="#/list"><img ng-src="{{home}}" alt="Home" title="Home"></a></div>
     <div class="span12">
       <ul>
-        <li ng-repeat="file in files | filter:query" class="cyan {{file.type}}"><img src="img/icons/{{file.type}}.png" alt="{{file.type}}" class="icon"> {{file.name}}</li>
+        <li ng-repeat="file in files | filter:query" class="{{file.type}}"><img src="img/icons/{{file.type}}.png" alt="{{file.type}}" class="icon"> <a class="{{file.path}}">{{file.name}}</a></li>
       </ul>
     </div>    
   </section>
@@ -32,3 +32,4 @@
       </div>
     </div>
   </footer>
+

@@ -36,7 +36,7 @@ body{
 
   border-bottom: 1px solid #CCCCCC;
 
-  padding: 10px 0px 10px 5px;
+  padding: 10px 10px 10px 5px;
 }
 
 #main-wrapper .icon{
@@ -59,17 +59,8 @@ footer p{
 }
 
 /** General Class **/
-.cyan{
-  color: #0088cc;
-  cursor: default;
-}
-
 .folder{
   cursor: pointer;
-}
-
-.folder:hover{
-  color: #005580;
 }
 
 .label{

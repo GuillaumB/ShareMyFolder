@@ -16,11 +16,11 @@ if(isset($_GET['folder'])){
       //on affiche seulement les dossiers et fichiers
       if($file != '.' && $file != '..'){
         if(is_dir($folderPath.$file)){
-          $tmp = array('name' => $file, 'path' => $folderPath, 'type' => 'folder');
+          $tmp = array('name' => $file, 'path' => $folderName, 'type' => 'folder');
           array_push($links, $tmp);
         }
         else{
-          $tmp = array('name' => $file, 'path' => $folderPath, 'type' => 'file');
+          $tmp = array('name' => $file, 'path' => $folderName, 'type' => 'file');
           array_push($links, $tmp);
         }
       }
@@ -33,11 +33,11 @@ else{
       //on affiche seulement les dossiers et fichiers
       if($file != '.' && $file != '..'){
         if(is_dir($folderPath.$file)){
-          $tmp = array('name' => $file, 'path' => $folderPath, 'type' => 'folder');
+          $tmp = array('name' => $file, 'path' => "", 'type' => 'folder');
           array_push($links, $tmp);
         }
         else{
-          $tmp = array('name' => $file, 'path' => $folderPath, 'type' => 'file');
+          $tmp = array('name' => $file, 'path' => "", 'type' => 'file');
           array_push($links, $tmp);
         }
       }
