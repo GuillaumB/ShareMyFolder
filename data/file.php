@@ -4,7 +4,7 @@ $tmp = null;
 $links = array();
 
 //Path du chemin vers le dossier de base
-$folderPath = "C:\wamp\www\\";
+$folderPath = "C:\\";
 
 if(isset($_GET['folder'])){
   $folderName = $_GET['folder'];
